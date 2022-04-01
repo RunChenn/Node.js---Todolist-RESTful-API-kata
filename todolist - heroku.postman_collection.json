@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "9e99bf51-978c-4b39-8ff3-d7f23177849a",
+		"name": "todolist - heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得所有代辦",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"今天要上鋼琴\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://blueberry-pudding-97800.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"blueberry-pudding-97800",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆代辦",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"今天要開會\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://blueberry-pudding-97800.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"blueberry-pudding-97800",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆代辦",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "https://blueberry-pudding-97800.herokuapp.com/todos/1234",
+					"protocol": "https",
+					"host": [
+						"blueberry-pudding-97800",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"今天要上鋼琴\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://blueberry-pudding-97800.herokuapp.com/todos",
+					"protocol": "https",
+					"host": [
+						"blueberry-pudding-97800",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆代辦",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"今天要上鋼琴\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://blueberry-pudding-97800.herokuapp.com/todos/1234",
+					"protocol": "https",
+					"host": [
+						"blueberry-pudding-97800",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todos",
+						"1234"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "94b5d03d-782b-467b-8c12-5cabf7f480ec",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "890ee83d-21e1-465f-b497-0071cc75166b",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
